@@ -3,26 +3,106 @@ import { Card, CardContent } from './ui/card.jsx';
 import { Button } from './ui/button.jsx';
 import { Input } from './ui/input.jsx';
 import { motion } from 'framer-motion';
+import { big } from 'framer-motion/client';
 
 const posten = [
   {
     id: 1,
+
     frage:
-      'Suchen Sie die Jahreszahl auf dem Brunnen. Der Bäcker ist 200 Jahr jünger als der Brunnen. Wie alt ist er?',
-    loesung: '1824',
-    hinweise:
-        {
-            hinweis1: 'Der Brunnen wurde 1824 erbaut.',
-            hinweis2: 'Der Bäcker ist 200 Jahre jünger als der Brunnen.'
-        }
+      'Zähle wie viele rote streifen es gibt beim Pfahl am ende der Wylandsbrücke?',
+
+    loesung: '3',
+
+    bild: '/locations/wylandsbruecke.jpg',
   },
+
   {
     id: 2,
+
     frage:
-      'Wie viele Treppenstufen führen zur alten Stadtmauer beim Lindbergpark?',
-    loesung: '43',
-    hinweis:
-      'Die Stadtmauer wurde zur Verteidigung genutzt – hier wurde einst gekämpft.',
+      'Was für einen Buchstaben steht beim blauen Rechteck der sich auf einem Mast befindet?',
+
+    loesung: 'S',
+
+    bild: '/locations/mast.jpg',
+  },
+
+  {
+    id: 3,
+
+    frage: 'Was für eine Zahl steht hinter der Wand des Gebäude (grafitiert)',
+
+    loesung: '161',
+
+    bild: '/locations/grafitti.jpg',
+  },
+
+  {
+    id: 4,
+
+    frage: 'Was steht auf der Bank in gelb',
+
+    loesung: 'FEELING LOST',
+
+    bild: '/locations/bank.jpg',
+  },
+
+  {
+    id: 5,
+
+    frage: 'Was für eine Nummer steht auf dem architekturgedankenreicher Mast',
+
+    loesung: '8',
+
+    bild: '/locations/mast.jpg',
+  },
+
+  {
+    id: 6,
+
+    frage:
+      'Was für einen Name hat die Bondendeckerrosse von Noack 2005 im Park?',
+
+    loesung: 'Sedana',
+
+    bild: '/locations/park.jpg',
+  },
+
+  {
+    id: 7,
+
+    frage: 'Was für eine maximale Frist gibt es um die Velos zu parkieren?',
+
+    loesung: '48',
+    bild: '/locations/velos.jpg',
+  },
+  {
+    id: 8,
+    frage: 'Wie viele Bäume hat es beim ZHAW Campus Stadt-Mitte?',
+    loesung: '23',
+    bild: '/locations/zhaw.jpg',
+  },
+  {
+    id: 9,
+    frage:
+      'Wie viele Orte weisen die Schilder den Weg beim AZW? Nimm den so­viel­ten Buchstaben aus der Ortsüberschrift für die Lösung.',
+    loesung: 'r',
+    bild: '/locations/azw.jpg',
+  },
+  {
+    id: 10,
+    frage:
+      'Um die Ecke des AZW gibt es eine Manta-Bar. Daneben befindet sich auf der anderen Straßenseite ein Brunnen mit zwei Becken. Wie hoch ist er?',
+    loesung: '2.30m - 2.50m',
+    bild: '/locations/manta.jpg',
+  },
+  {
+    id: 11,
+    frage:
+      'Von deinem jetzigen Standort aus kannst du Richtung Nordwesten ein Firmengebäude sehen, das im Stadtbild herausragt. Zähle die Briefkästen. Nimm vom Schild mit der Bezeichnung der Straße die fünfte Firma, angefangen von oben links. Ermittle den Buchstabenwert des Anfangsbuchstabens der Firma (z. B. D = 4). Addiere die Anzahl Briefkästen dazu. Wandle das Ergebnis wieder in einen Buchstaben um. Das ist dein Lösungsbuchstabe.',
+    loesung: 'u',
+    bild: '/locations/firmengebaeude.jpg',
   },
 ];
 
