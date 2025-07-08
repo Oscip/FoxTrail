@@ -10,8 +10,11 @@ const posten = [
     frage:
       'Suchen Sie die Jahreszahl auf dem Brunnen. Der Bäcker ist 200 Jahr jünger als der Brunnen. Wie alt ist er?',
     loesung: '1824',
-    hinweis:
-      'Der Bäcker war die ganze Nacht mit seinem Lernenden am Brotbacken',
+    hinweise:
+        {
+            hinweis1: 'Der Brunnen wurde 1824 erbaut.',
+            hinweis2: 'Der Bäcker ist 200 Jahre jünger als der Brunnen.'
+        }
   },
   {
     id: 2,
@@ -65,7 +68,10 @@ export default function Foxtrail() {
               onChange={(e) => setEingabe(e.target.value)}
             />
             {!freigeschaltet && (
-              <Button onClick={pruefen}>Antwort prüfen</Button>
+              <div>
+                <Button onClick={pruefen}>Antwort prüfen</Button>
+                <Button>Hinweis anzeigen</Button>
+              </div>
             )}
             {freigeschaltet && (
               <div className="space-y-2">
