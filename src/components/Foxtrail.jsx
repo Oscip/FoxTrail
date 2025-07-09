@@ -138,8 +138,8 @@ export default function Foxtrail() {
             />
             {!freigeschaltet && (
               <div>
+                <br/>
                 <Button onClick={pruefen}>Antwort prüfen</Button>
-                <Button disabled>Hinweis anzeigen</Button>
                 <br />
                 <br />
                 <p>Bisherige Buchstaben: {loesungen}</p>
