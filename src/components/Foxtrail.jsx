@@ -55,7 +55,7 @@ const posten = [
 
     loesung: '8',
 
-    bild: '/locations/mast.jpeg',
+    bild: '/locations/mast2.jpeg',
   },
 
   {
@@ -151,6 +151,9 @@ export default function Foxtrail() {
               <div>
                 <Button onClick={pruefen}>Antwort prüfen</Button>
                 <Button>Hinweis anzeigen</Button>
+                <br/>
+                <br/>
+                <img src={posten[aktuell].bild}/>
               </div>
             )}
             {freigeschaltet && (
