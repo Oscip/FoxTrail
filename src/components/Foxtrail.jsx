@@ -94,7 +94,14 @@ export default function Foxtrail() {
   const [freigeschaltet, setFreigeschaltet] = useState(false);
 
   const pruefen = () => {
-    if (
+    if (posten[aktuell].id === 10) {
+      const eingabeZahl = parseFloat(eingabe.replace(',', '.'));
+      if (eingabeZahl > 2.1 && eingabeZahl < 2.5) {
+        setFreigeschaltet(true);
+      } else {
+        alert('Falsche Lösung, versuch es nochmals!');
+      }
+    } else if (
       eingabe.trim().toLowerCase() === posten[aktuell].loesung.toLowerCase()
     ) {
       setFreigeschaltet(true);
@@ -138,7 +145,7 @@ export default function Foxtrail() {
             />
             {!freigeschaltet && (
               <div>
-                <br/>
+                <br />
                 <Button onClick={pruefen}>Antwort prüfen</Button>
                 <br />
                 <br />
