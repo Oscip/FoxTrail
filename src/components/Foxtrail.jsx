@@ -14,7 +14,7 @@ const posten = [
 
     loesung: '3',
 
-    bild: '/locations/wylandsbruecke.jpg',
+    bild: '/locations/wylandsbruecke.jpeg',
   },
 
   {
@@ -25,7 +25,7 @@ const posten = [
 
     loesung: 'S',
 
-    bild: '/locations/mast.jpg',
+    bild: '/locations/mast.jpeg',
   },
 
   {
@@ -35,7 +35,7 @@ const posten = [
 
     loesung: '161',
 
-    bild: '/locations/grafitti.jpg',
+    bild: '/locations/grafitti.jpeg',
   },
 
   {
@@ -45,7 +45,7 @@ const posten = [
 
     loesung: 'FEELING LOST',
 
-    bild: '/locations/bank.jpg',
+    bild: '/locations/park.jpeg',
   },
 
   {
@@ -55,7 +55,7 @@ const posten = [
 
     loesung: '8',
 
-    bild: '/locations/mast.jpg',
+    bild: '/locations/mast.jpeg',
   },
 
   {
@@ -66,7 +66,7 @@ const posten = [
 
     loesung: 'Sedana',
 
-    bild: '/locations/park.jpg',
+    bild: '/locations/rose.jpeg',
   },
 
   {
@@ -75,7 +75,7 @@ const posten = [
     frage: 'Was für eine maximale Frist gibt es um die Velos zu parkieren?',
 
     loesung: '48',
-    bild: '/locations/velos.jpg',
+    bild: '/locations/velos.jpeg',
   },
   {
     id: 8,
